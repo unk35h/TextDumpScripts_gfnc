@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package BattleBuffCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    string Name = 2;
+    bool IsShow = 3;
+    string Icon = 4;
+    int32 Action = 5;
+    bool ShowText = 6;
+    bool ConflictSelf = 7;
+    int32 BuffGroupId = 8;
+    int32 Level = 9;
+    int32 MaxTier = 10;
+    bool RefreshTier = 11;
+    int32 DispelType = 12;
+    string Feature = 13;
+    bool IsControl = 14;
+    bool BreakSkill = 15;
+    int32 ResistanceFormula = 16;
+    int32 DurationType = 17;
+    int32 Duration = 18;
+    repeated int32 SkillList = 19;
+    string ExtraBaseNum = 20;
+    string ExtraTierNum = 21;
+    int32 ActiveAudio = 22;
+    int32 DispelAudio = 23;
+    int32 MatShow = 24;
+    repeated int32 CreationShow = 25;
+    repeated int32 AttributeID = 26;
+    repeated int32 BaseNum = 27;
+    repeated int32 TierNum = 28;
+    bool DeathBuffRetain = 29;
+    int32 BuffType = 30;
+    int32 BreakNum = 31;
+}

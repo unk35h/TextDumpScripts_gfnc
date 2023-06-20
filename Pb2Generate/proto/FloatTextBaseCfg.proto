@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package FloatTextBaseCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    string Icon = 2;
+    bool ShowNumber = 3;
+    int32 NumberFont = 4;
+    int32 SpriteGap = 5;
+}

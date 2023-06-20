@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package DormFightItemCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 ItemId = 1;
+    int32 Type = 2;
+    string Name = 3;
+    string PrefabPath = 4;
+    repeated int32 PickSeId = 5;
+    repeated int32 CollidingItemSeId = 6;
+    repeated int32 CollidingCharacterSeId = 7;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package BattleUltimateskillBehaviorCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    int32 Value = 2;
+}

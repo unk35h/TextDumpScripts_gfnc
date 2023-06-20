@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package FloatTextEnlargeCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    double Classify = 2;
+    double Enlarge = 3;
+}

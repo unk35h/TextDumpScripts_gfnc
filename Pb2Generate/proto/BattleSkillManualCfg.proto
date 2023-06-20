@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package BattleSkillManualCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    int32 ManualSelectAi = 2;
+    int32 SelectRange = 3;
+    repeated int32 ManualSelectType = 4;
+    int32 FirstStepCreation = 5;
+    string CastTip1 = 6;
+    int32 ManualSelectSecond = 7;
+    int32 SecondStepCreation = 8;
+    string CastTip2 = 9;
+    int32 SelectDisplayType = 10;
+    bool IsEmptyGrid = 11;
+    bool IgnoreUnselectableSameBelong = 12;
+    string SkillUnavailableTip = 13;
+    repeated int32 DefaultSelectType = 14;
+}

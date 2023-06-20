@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package BattleSkillCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    string Name = 2;
+    int32 AudioSkillId = 3;
+    string Describe = 4;
+    string DescribeLv = 5;
+    int32 HurtType = 6;
+    repeated int32 Formula = 7;
+    repeated int32 FormulaArg = 8;
+    repeated int32 FormulaArg2 = 9;
+    repeated int32 FormulaArg3 = 10;
+    string Icon = 11;
+    int32 TypeColor = 12;
+    string SkillMovie = 13;
+    int32 Priority = 14;
+    int32 SkillTag = 15;
+    bool IsBreakComAtk = 16;
+    int32 CdTime = 17;
+    int32 TotalCdFormula = 18;
+    int32 TotalCdArg = 19;
+    repeated int32 StartCdRank = 20;
+    repeated int32 StartCdRankNum = 21;
+    int32 UseLimit = 22;
+    string LuaScript = 23;
+    int32 MoveTargetAi = 24;
+    bool ContainExtraMovesort = 25;
+    int32 SkillRange = 26;
+    int32 PlayerMpCost = 27;
+    int32 RangeDeviation = 28;
+    bool Turn = 29;
+    int32 Quality = 30;
+    bool ManualMode = 31;
+    int32 FuncHeroid = 32;
+    int32 GridSkill = 33;
+    string GridEffect = 34;
+    int32 BreakNum = 35;
+    bool SkillIsShow = 36;
+}

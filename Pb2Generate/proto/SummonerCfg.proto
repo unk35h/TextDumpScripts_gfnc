@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package SummonerCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    string Name = 2;
+    string Info = 3;
+    int32 SrcId = 4;
+    int32 Intensity = 5;
+    int32 Career = 6;
+    int32 Camp = 7;
+    int32 Range = 8;
+    int32 MoveSpd = 9;
+    repeated int32 EnemySkill = 10;
+    repeated int32 MonsterTag = 11;
+    bool IsShowStateBar = 12;
+    bool IsShowInfoBar = 13;
+    bool ContainAction = 14;
+    bool ContainFacadeComp = 15;
+    int32 BreakId = 16;
+}

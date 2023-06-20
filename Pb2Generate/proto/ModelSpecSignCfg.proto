@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package ModelSpecSignCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    string PreSign = 2;
+    bool HasQuality = 3;
+}

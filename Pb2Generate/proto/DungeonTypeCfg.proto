@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package DungeonTypeCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    int32 Multiplier = 2;
+    int32 HpRecover = 3;
+    int32 BenchRecover = 4;
+    int32 FunctionId = 5;
+    int32 SectorMentionId = 6;
+}

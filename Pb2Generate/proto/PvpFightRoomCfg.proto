@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package PvpFightRoomCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Roomtypeid = 1;
+    int32 BattleRoleNumber = 2;
+    int32 BattlePlayerNumber = 3;
+    int32 PrepareTime = 4;
+    int32 BattleTime = 5;
+}

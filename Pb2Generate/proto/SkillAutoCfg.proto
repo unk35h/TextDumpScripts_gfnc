@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package SkillAutoCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    repeated int32 ConditionId = 2;
+    int32 AutoPriority = 3;
+    int32 MaxEnergyPriority = 4;
+}

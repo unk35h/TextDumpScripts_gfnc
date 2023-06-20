@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package BattleUltSpecTimelineCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 SkillId = 1;
+    string PlayablePath = 2;
+    int32 CameraPositionType = 3;
+    int32 CameraPositionBone = 4;
+    int32 CameraFollowType = 5;
+    int32 CameraFollowBone = 6;
+    int32 CameraLookatType = 7;
+    int32 CameraLookatBone = 8;
+    int32 CameraHideType = 9;
+}

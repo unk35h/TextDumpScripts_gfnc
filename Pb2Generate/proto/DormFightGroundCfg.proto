@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package DormFightGroundCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 GroundId = 1;
+    string Name = 2;
+    repeated int32 OnFootCharacterSeId = 3;
+}

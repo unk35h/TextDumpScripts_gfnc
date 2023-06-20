@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package BattleCreationCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    int32 AudioId = 2;
+    bool NeedShowEffect = 3;
+    string SrcName = 4;
+    string BaseSrcPath = 5;
+    int32 LoadType = 6;
+    bool EffectEnable = 7;
+    int32 BirthType = 8;
+    int32 BirthPoint = 9;
+    int32 DestType = 10;
+    int32 DestPoint = 11;
+    int32 BindType = 12;
+    int32 BindPoint = 13;
+    int32 DieType = 14;
+    int32 RouteType = 15;
+    bool Track = 16;
+    int32 Speed = 17;
+    int32 ExistFrame = 18;
+    int32 MotionEasing = 19;
+    int32 EffectTriggerCode = 20;
+    repeated int32 TriggerCreationId = 21;
+    repeated int32 TriggerCreationDelay = 22;
+    repeated int32 CreationBuffType = 23;
+}

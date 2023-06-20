@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package GameTimeLineCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    int32 Warpmode = 2;
+    string SceneName = 3;
+    string PlayableDirName = 4;
+    string TimelineAssetName = 5;
+}

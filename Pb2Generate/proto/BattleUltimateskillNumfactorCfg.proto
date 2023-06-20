@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package BattleUltimateskillNumfactorCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Number = 1;
+    int32 Multiplier = 2;
+}

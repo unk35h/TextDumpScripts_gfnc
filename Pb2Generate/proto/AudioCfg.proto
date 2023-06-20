@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package AudioCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    string Name = 2;
+    string Sheet = 3;
+    int32 Type = 4;
+}

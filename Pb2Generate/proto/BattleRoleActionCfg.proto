@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package BattleRoleActionCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    int32 ActionNameType = 2;
+    string ActionName = 3;
+    int32 ActionValue = 4;
+    int32 EndValue = 5;
+    int32 TransitionDuration = 6;
+    int32 Layer = 7;
+    double NormalizedTime = 8;
+    int32 BaseRate = 9;
+}

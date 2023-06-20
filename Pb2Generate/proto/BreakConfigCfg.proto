@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package BreakConfigCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 BreakId = 1;
+    int32 BreakNum = 2;
+    int32 DamageReduce = 3;
+    int32 DamageIncrease = 4;
+    int32 BreakTime = 5;
+    int32 IntervalTime = 6;
+    repeated int32 Feature = 7;
+    repeated int32 IncreaseNum = 8;
+    int32 BreakEffect = 9;
+    string DesIcon = 10;
+    string Description = 11;
+    string DescriptionLv = 12;
+    string DesName = 13;
+}

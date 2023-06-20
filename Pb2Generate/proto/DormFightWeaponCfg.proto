@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package DormFightWeaponCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 WeaponId = 1;
+    int32 Type = 2;
+    int32 AttackValue = 3;
+    double ThrowForce = 4;
+    int32 PickEpCost = 5;
+    int32 HoldEpCost = 6;
+    int32 ThrowEpCost = 7;
+    int32 PickSeId = 8;
+    int32 ThrowSeId = 9;
+    int32 HitSeId = 10;
+}

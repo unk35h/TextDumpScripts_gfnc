@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package HeroPvpFightCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 HeroTypeId = 1;
+    int32 HeroModelId = 2;
+    int32 Hp = 3;
+    int32 MaxHp = 4;
+    int32 Ep = 5;
+    int32 MaxEp = 6;
+    int32 EpRecoverPerSecond = 7;
+    int32 EpRecoverCdMileSec = 8;
+    int32 AttackPower = 9;
+    int32 EpReduceByAttack = 10;
+    int32 WalkSpeedMultiple = 11;
+    int32 RunSpeedMultiple = 12;
+    int32 EpReduceByRunPerSecond = 13;
+}

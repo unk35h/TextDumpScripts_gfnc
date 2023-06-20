@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package SkillAutoConditionCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    int32 Order = 2;
+    string CheckCondition = 3;
+}

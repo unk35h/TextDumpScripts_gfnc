@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package BattleTargetSelectCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    int32 TargetTypeCode = 2;
+    bool SelectAll = 3;
+    string SelectFormula = 4;
+    int32 SelectOrder = 5;
+    int32 NeutralSeparate = 6;
+    string OrderFormula = 7;
+    bool IsAscendOrder = 8;
+    int32 TargetNumber = 9;
+    int32 ExtraType = 10;
+    int32 ExtraTargetTypeCode = 11;
+    int32 MoveCode = 12;
+}

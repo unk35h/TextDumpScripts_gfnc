@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package BattleMatShowCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    bool IsContinued = 2;
+    int32 DurationFrame = 3;
+    int32 LoopCount = 4;
+    bool ResetAlpha = 5;
+    int32 WholeAlpha = 6;
+    bool OutlineEnable = 7;
+    string OutlineColor = 8;
+    int32 OutlineColorIntensity = 9;
+    int32 OutlineDetail = 10;
+    int32 OutlineWider = 11;
+    int32 OutlineScale = 12;
+    string MainColor = 13;
+}

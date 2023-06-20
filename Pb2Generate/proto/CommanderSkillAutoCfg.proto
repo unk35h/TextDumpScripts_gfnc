@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package CommanderSkillAutoCfg;
+
+message CfgTable {    
+    repeated Cfg Data = 1;
+}
+
+message Cfg {
+    int32 Id = 1;
+    int32 Priority = 2;
+    int32 AutoMpMin = 3;
+    int32 AutoMpMax = 4;
+    int32 AutoCd = 5;
+}
